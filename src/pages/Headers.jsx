@@ -1,19 +1,23 @@
 import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const Headers = () => {
   const [showfile, setShowFile] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const showMenu = () => {
     setShowFile(!showfile);
   };
   return (
     <>
-      <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-6 px-2 bg-white ">
+      <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-4 px-2 bg-white ">
         <nav className="flex items-center w-full max-w-[1240px] gap-10">
-          <div className="text-black font-[Impact, Haettenschweiler] text-[34px] font-bold leading-normal cursor-pointer">
+          <div className="text-black font-[Impact, Haettenschweiler] text-[34px] font-extrabold leading-normal cursor-pointer">
             SHOP.CO
           </div>
-          <ul className="flex list-none items-center gap-5 m-0">
+
+          <ul className="hidden md:flex list-none items-center gap-5 m-0">
             <div className="relative block ml-14">
               <li className="flex cursor-pointer text-black text-base items-center gap-1">
                 Shop
@@ -66,7 +70,7 @@ const Headers = () => {
               Brands
             </li>
           </ul>
-          <div className=" flex rounded-[62px] bg-gray-200 py-3 px-4 gap-3 items-center">
+          <div className="hidden md:flex rounded-[62px] bg-[#F0F0F0] py-3 px-3 gap-3 items-center">
             <div className="cursor-pointer w-4 h-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +88,7 @@ const Headers = () => {
             </div>
             <div className="flex">
               <input
-                className="text-black/90 font-[Satoshi] text-base font-[16px] border-none bg-transparent w-full outline-none"
+                className="text-black/90 font-[Satoshi] text-base font-[14px] border-none bg-transparent w-full outline-none"
                 type="text"
                 placeholder="Search for products..."
               />
@@ -117,6 +121,32 @@ const Headers = () => {
             </svg>
           </div>
         </nav>
+
+        {/* Mobile Icon */}
+        <div
+          className="md:hidden text-2xl cursor-pointer mt-1 p-3"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {!isOpen && <GiHamburgerMenu />}
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="absolute top-0 left-0 w-full h-screen bg-[#CDCDCD] flex flex-col list-none p-8  gap-4 py-4 md:hidden">
+            {/* Close Icon inside menu */}
+            <div
+              className="self-end text-2xl cursor-pointer mb-4"
+              onClick={() => setIsOpen(false)}
+            >
+              <IoClose />
+            </div>
+
+            <li className="cursor-pointer hover:text-gray-500 mt-10">Shop</li>
+            <li className="cursor-pointer hover:text-gray-500 mt-2">On Sale</li>
+            <li className="cursor-pointer hover:text-gray-500 mt-2">New Arrivals</li>
+            <li className="cursor-pointer hover:text-gray-500 mt-2">Brands</li>
+          </div>
+        )}
       </div>
     </>
   );

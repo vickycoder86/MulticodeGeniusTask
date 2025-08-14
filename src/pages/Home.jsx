@@ -4,12 +4,13 @@ import TestimonialSlider from "../components/TestimonialSlider";
 const Home = () => {
   return (
     <>
-      <div className="flex justify-center items-center mt-[10px] bg-[rgb(242,240,241)] flex-row  w-full">
-        <div className="flex flex-col items-start justify-center max-w-[1240px] py-[120px] gap-14">
+      <div className="flex justify-center items-center mt-[24px] bg-[rgb(242,240,241)] flex-row w-full text-center px-4 sm:px-6 md:px-8">
+        <div className="flex flex-col items-start justify-center max-w-[1240px] py-[80px] sm:py-[100px] md:py-[120px] gap-14">
           <div className="flex flex-col items-start justify-start gap-8 pt-12">
-            <div className="text-black font-[Impact, Haettenschweiler] text-6xl font-bold leading-[64px] relative max-w-[577px]">
+            <div className="text-black font-[Impact, Haettenschweiler] text-[40px] sm:text-4xl md:text-5xl lg:text-[68px] font-extrabold leading-[40px] sm:leading-[48px] md:leading-[56px] lg:leading-[64px] relative max-w-[577px] lg:text-left">
               FIND CLOTHES THAT MATCHES YOUR STYLE
-              <div className="absolute -top-[35px] -right-[100px]">
+              {/* Top Right SVG */}
+              <div className="absolute -top-[35px] -right-[100px] hidden md:block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="104"
@@ -27,7 +28,9 @@ const Home = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="absolute bottom-[-75px] left-[-90px] top-auto right-auto">
+
+              {/* Bottom Left SVG */}
+              <div className="absolute bottom-[-75px] left-[-90px] top-auto right-auto hidden md:block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="56"
@@ -47,48 +50,49 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="text-black/60  text-base font-[16px] leading-[22px] text-center max-w-[545px]">
-              Browse through our diverse range of meticulously crafted garments,
-              designed to bring out your individuality and cater to your sense
+            <div className="text-black/60 text-[16px]  sm:text-base md:text-[16px] leading-[22px] sm:leading-[22px] md:leading-[20px] text-center max-w-[550px]">
+              Browse through our diverse range of meticulously crafted garments, designed
+              to bring out your individuality and cater to your sense
               of style.
             </div>
-            <div className="px-[54px] py-4 text-white font-satoshi text-base font-medium cursor-pointer rounded-[62px] bg-black">
+
+            <div className="px-[54px] py-4 text-white font-satoshi text-base font-medium cursor-pointer rounded-[62px] bg-black text-center mx-auto sm:mx-0">
+
               Shop Now
             </div>
           </div>
 
-          <div className="flex gap-4">
-            <div className="border-none pl-4 flex flex-col items-start justify-start">
-              <div className="text-black font-satoshi text-[40px] font-bold">
-                200+
-              </div>
-              <div className="text-black/60 font-satoshi text-[16px] font-normal leading-[22px]">
-                International Brands
-              </div>
-            </div>
-            <div className=" pl-4 flex flex-col items-start justify-start border-l border-black/10">
-              <div className="text-black font-satoshi text-[40px]  font-bold">
-                2000+
-              </div>
-              <div className="text-black/60 font-satoshi text-[16px] font-normal leading-[22px]">
-                High-Quality Products
-              </div>
-            </div>
-            <div className=" pl-4 flex flex-col items-start justify-start border-l border-black/10">
-              <div className="text-black font-satoshi text-[40px]  font-bold">
-                30000+
-              </div>
-              <div className="text-black/60 font-satoshi text-[16px] font-normal leading-[22px]">
-                Happy Customers
-              </div>
-              {/* testmonial here */}
-            </div>
-          </div>
-         
+          {/* Stats Section */}
+          <div className="flex flex-row gap-4 flex-nowrap overflow-x-auto">
+  <div className="border-none pl-4 flex flex-col items-start justify-start min-w-[120px]">
+    <div className="text-black font-satoshi text-2xl sm:text-[40px] font-bold">
+      200+
+    </div>
+    <div className="text-black/60 font-satoshi text-sm sm:text-[16px] font-normal leading-[18px] sm:leading-[22px]">
+      International Brands
+    </div>
+  </div>
+  <div className="pl-4 flex flex-col items-start justify-start border-l border-black/10 min-w-[120px]">
+    <div className="text-black font-satoshi text-2xl sm:text-[40px] font-bold">
+      2000+
+    </div>
+    <div className="text-black/60 font-satoshi text-sm sm:text-[16px] font-normal leading-[18px] sm:leading-[22px]">
+      High-Quality Products
+    </div>
+  </div>
+  <div className="pl-4 flex flex-col items-start justify-start border-l border-black/10 min-w-[120px]">
+    <div className="text-black font-satoshi text-2xl sm:text-[40px] font-bold">
+      30000+
+    </div>
+    <div className="text-black/60 font-satoshi text-sm sm:text-[16px] font-normal leading-[18px] sm:leading-[22px]">
+      Happy Customers
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
-
-      {/* product section */}
     </>
   );
 };

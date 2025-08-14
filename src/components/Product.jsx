@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProductCard from './ProductCard'
 import tshirt1 from "/tshirt1.webp"
 import tshirt2 from "/tshirt2.webp"
+import TestimonialSlider from './TestimonialSlider'
 
 const Product = () => {
 const myArray = [1, 2, 3, 4, 5];
@@ -61,11 +62,17 @@ const myArray = [1, 2, 3, 4, 5];
         </div>   
       </div>
       </div>
-    <div className="flex flex-row items-center justify-center w-full">
+    <div className="flex flex-col items-center justify-center w-full">
         <div className="text-black text-center font-serif text-5xl font-bold pt-16 w-full">
           OUR HAPPY CUSTOMERS
         </div>
+        <div className='mt-4'>
+        <TestimonialSlider />
       </div>
+         
+      </div>
+      
+      
       
        
       </>

@@ -1,24 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Headers = () => {
+  const [showfile, setShowFile] = useState(false);
 
-  const showMenu=()=>{
-    alert("menu")
-  }
+  const showMenu = () => {
+    setShowFile(!showfile);
+  };
   return (
     <>
       <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-6 px-2 bg-white ">
-
         <nav className="flex items-center w-full max-w-[1240px] gap-10">
-          
           <div className="text-black font-[Impact, Haettenschweiler] text-[34px] font-bold leading-normal cursor-pointer">
             SHOP.CO
           </div>
           <ul className="flex list-none items-center gap-5 m-0">
-            <div className="relative block ml-14" onMouseOver={showMenu}>
+            <div className="relative block ml-14">
               <li className="flex cursor-pointer text-black text-base items-center gap-1">
                 Shop
                 <svg
+                  onClick={showMenu}
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -31,6 +31,29 @@ const Headers = () => {
                   ></path>
                 </svg>
               </li>
+              <div style={{ position: "relative" }}>
+                {" "}
+                {/* header wrapper */}
+                {showfile && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "100%",
+                      left: 0,
+                      padding: "10px",
+                      backgroundColor: "#fff",
+                      border: "1px solid #ccc",
+                      width: "100px",
+                      boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                      zIndex: 100,
+                      textAlign: "center",
+                    }}
+                  >
+                    <li className="hearder_list">Men</li>
+                    <li className="hearder_list">Child</li>
+                  </div>
+                )}
+              </div>
             </div>
 
             <li className="flex cursor-pointer font-normal items-center gap-1 text-black text-base">

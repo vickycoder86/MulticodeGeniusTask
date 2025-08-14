@@ -1,0 +1,59 @@
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+
+  /* overflow: hidden; */
+}
+
+.testimonial-card {
+  max-width: 780px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 90px 0px;
+  background: #F0EEED;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.8s ease-in-out;
+}
+
+.review {
+  font-size: 15px;
+  
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.designation {
+  font-size: 14px;
+  color: #777;
+}
+
+.left-icon, .right-icon {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-icon {
+  left: -15px;
+}
+
+.right-icon {
+  right: -15px;
+}
+
+@keyframes fadeSlide {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

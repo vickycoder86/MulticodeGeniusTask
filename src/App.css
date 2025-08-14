@@ -4,10 +4,9 @@
   box-sizing: border-box;
  
 }
-.vks{
- 
-  font-size: 33px;
-  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
-  
-  
+.hearder_list{
+  align-items: center;
+}
+.hearder_list:hover{
+  background-color: lightgray;
 }

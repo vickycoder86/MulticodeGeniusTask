@@ -33,7 +33,7 @@ export default function TestimonialSlider() {
   useEffect(() => {
     const interval = setInterval(() => nextSlide(), 3000);
     return () => clearInterval(interval);
-  },);
+  });
 
   const prevSlide = () => {
     setIndex(index === 0 ? testimonials.length - 1 : index - 1);

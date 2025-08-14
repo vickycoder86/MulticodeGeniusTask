@@ -13,14 +13,14 @@
   text-align: center;
   padding: 30px;
   border-radius: 90px 0px;
-  background: #F0EEED;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #f0eeed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeSlide 0.8s ease-in-out;
 }
 
 .review {
   font-size: 15px;
-  
+  font-weight: 600;
 }
 
 .name {
@@ -34,7 +34,8 @@
   color: #777;
 }
 
-.left-icon, .right-icon {
+.left-icon,
+.right-icon {
   position: absolute;
   font-size: 40px;
   cursor: pointer;
@@ -54,6 +55,12 @@
 }
 
 @keyframes fadeSlide {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

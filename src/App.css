@@ -2,11 +2,10 @@
 
 * {
   box-sizing: border-box;
- 
 }
-.hearder_list{
+.hearder_list {
   align-items: center;
 }
-.hearder_list:hover{
+.hearder_list:hover {
   background-color: lightgray;
 }

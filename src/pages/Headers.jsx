@@ -37,7 +37,7 @@ const Headers = () => {
               </li>
               <div style={{ position: "relative" }}>
                 {" "}
-                {/* header wrapper */}
+                
                 {showfile && (
                   <div
                     style={{
@@ -122,7 +122,6 @@ const Headers = () => {
           </div>
         </nav>
 
-       
         <div
           className="md:hidden text-2xl cursor-pointer mt-1 p-3"
           onClick={() => setIsOpen(!isOpen)}
@@ -130,10 +129,8 @@ const Headers = () => {
           {!isOpen && <GiHamburgerMenu />}
         </div>
 
-     
         {isOpen && (
           <div className="absolute top-0 left-0 w-full h-screen bg-[#CDCDCD] flex flex-col list-none p-8  gap-4 py-4 md:hidden">
-           
             <div
               className="self-end text-2xl cursor-pointer mb-8"
               onClick={() => setIsOpen(false)}
@@ -143,7 +140,9 @@ const Headers = () => {
 
             <li className="cursor-pointer hover:text-gray-500 mt-10">Shop</li>
             <li className="cursor-pointer hover:text-gray-500 mt-2">On Sale</li>
-            <li className="cursor-pointer hover:text-gray-500 mt-2">New Arrivals</li>
+            <li className="cursor-pointer hover:text-gray-500 mt-2">
+              New Arrivals
+            </li>
             <li className="cursor-pointer hover:text-gray-500 mt-2">Brands</li>
           </div>
         )}

@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-start justify-start gap-2.5">
-            <p>Help</p>
+            <p>H E L P</p>
             <a href="#">Privacy statement</a>
             <a href="#">Terms &amp; Conditions</a>
             <a href="#">Cookie Policy</a>

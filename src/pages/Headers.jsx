@@ -11,13 +11,13 @@ const Headers = () => {
   };
   return (
     <>
-      <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-4 px-2 bg-white ">
+      <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-6 px-2 bg-white ">
         <nav className="flex items-center w-full max-w-[1240px] gap-10">
           <div className="text-black font-[Impact, Haettenschweiler] text-[34px] font-extrabold leading-normal cursor-pointer">
             SHOP.CO
           </div>
 
-          <ul className="hidden md:flex list-none items-center gap-5 m-0">
+          <ul className="hidden lg:flex list-none items-center gap-5 m-0">
             <div className="relative block ml-14">
               <li className="flex cursor-pointer text-black text-base items-center gap-1">
                 Shop
@@ -70,7 +70,7 @@ const Headers = () => {
               Brands
             </li>
           </ul>
-          <div className="hidden md:flex rounded-[62px] bg-[#F0F0F0] py-3 px-3 gap-3 items-center">
+          <div className="hidden lg:flex rounded-[62px] bg-[#F0F0F0] py-3 px-3 gap-3 items-center">
             <div className="cursor-pointer w-4 h-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const Headers = () => {
           </div>
         </nav>
 
-        {/* Mobile Icon */}
+       
         <div
           className="md:hidden text-2xl cursor-pointer mt-1 p-3"
           onClick={() => setIsOpen(!isOpen)}
@@ -130,12 +130,12 @@ const Headers = () => {
           {!isOpen && <GiHamburgerMenu />}
         </div>
 
-        {/* Mobile Menu */}
+     
         {isOpen && (
           <div className="absolute top-0 left-0 w-full h-screen bg-[#CDCDCD] flex flex-col list-none p-8  gap-4 py-4 md:hidden">
-            {/* Close Icon inside menu */}
+           
             <div
-              className="self-end text-2xl cursor-pointer mb-4"
+              className="self-end text-2xl cursor-pointer mb-8"
               onClick={() => setIsOpen(false)}
             >
               <IoClose />

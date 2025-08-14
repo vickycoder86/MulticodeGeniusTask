@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   height: 250px;
-
-  /* overflow: hidden; */
+/* 
+  overflow: hidden; */
 }
 
 .testimonial-card {
@@ -15,7 +15,7 @@
   border-radius: 90px 0px;
   background: #f0eeed;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeSlide 0.8s ease-in-out;
+  animation: fadeSlide 0.5s ease-in-out;
 }
 
 .review {
@@ -56,7 +56,7 @@
 
 @keyframes fadeSlide {
   from {
-    transform: translateX(50px);
+    transform: translateX(10px);
     opacity: 0;
   }
   to {

@@ -13,13 +13,13 @@ const testimonials = [
       "Our experience with your service has been exceptional. The platform provided us with a seamless hiring process, from posting job openings to finding the perfect candidate. The user-friendly interface made it easy for our team to collaborate, review applications, and schedule interviews. Thanks to your service, we were able to hire a highly qualified candidate within a short timeframe. It has become an invaluable tool for our recruitment efforts",
   },
   {
-    name: "John Smith",
+    name: "John Lane",
     designation: "Senior HR Manager at Zendesk",
     review:
       "Our experience with your service has been exceptional. The platform provided us with a seamless hiring process, from posting job openings to finding the perfect candidate. The user-friendly interface made it easy for our team to collaborate, review applications, and schedule interviews. Thanks to your service, we were able to hire a highly qualified candidate within a short timeframe. It has become an invaluable tool for our recruitment efforts",
   },
   {
-    name: "John Smith",
+    name: "John Kane",
     designation: "Senior HR Manager at Zendesk",
     review:
       "Our experience with your service has been exceptional. The platform provided us with a seamless hiring process, from posting job openings to finding the perfect candidate. The user-friendly interface made it easy for our team to collaborate, review applications, and schedule interviews. Thanks to your service, we were able to hire a highly qualified candidate within a short timeframe. It has become an invaluable tool for our recruitment efforts",
@@ -31,9 +31,9 @@ export default function TestimonialSlider() {
   const [animationKey, setAnimationKey] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => nextSlide(), 3000);
+    const interval = setInterval(() => nextSlide(), 5000);
     return () => clearInterval(interval);
-  });
+  },);
 
   const prevSlide = () => {
     setIndex(index === 0 ? testimonials.length - 1 : index - 1);

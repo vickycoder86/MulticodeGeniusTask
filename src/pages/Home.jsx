@@ -4,7 +4,7 @@ import TestimonialSlider from "../components/TestimonialSlider";
 const Home = () => {
   return (
     <>
-      <div className="flex justify-center items-center mt-[24px] bg-[rgb(242,240,241)] flex-row w-full text-center px-4 sm:px-6 md:px-8">
+      <div className="flex justify-center items-center mt-[22px] bg-[rgb(242,240,241)] flex-row w-full text-center px-4 sm:px-6 md:px-8">
         <div className="flex flex-col items-start justify-center max-w-[1240px] py-[80px] sm:py-[100px] md:py-[120px] gap-14">
           <div className="flex flex-col items-start justify-start gap-8 pt-12">
             <div className="text-black font-[Impact, Haettenschweiler] text-[40px] sm:text-4xl md:text-5xl lg:text-[68px] font-extrabold leading-[40px] sm:leading-[48px] md:leading-[56px] lg:leading-[64px] relative max-w-[577px] lg:text-left">

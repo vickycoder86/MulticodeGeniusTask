@@ -13,9 +13,9 @@ const Headers = () => {
     <>
       <div className="fixed top-0 left-0 w-full flex justify-center z-[2147483647] p-6 px-2 bg-white ">
         <nav className="flex items-center w-full max-w-[1240px] gap-10">
-          <div className="text-black font-[Impact, Haettenschweiler] text-[34px] font-extrabold leading-normal cursor-pointer">
+          <div className="text-black font-[Impact, Haettenschweiler] text-[26px] lg:text-[34px] font-extrabold leading-normal cursor-pointer">
             SHOP.CO
-          </div>
+          </div>  
 
           <ul className="hidden lg:flex list-none items-center gap-5 m-0">
             <div className="relative block ml-14">
@@ -130,9 +130,9 @@ const Headers = () => {
         </div>
 
         {isOpen && (
-          <div className="absolute top-0 left-0 w-full h-screen bg-[#CDCDCD] flex flex-col list-none p-8  gap-4 py-4 md:hidden">
+          <div className="absolute top-0 left-0 w-full h-screen bg-[#CDCDCD] flex flex-col list-none p-7  gap-4 py-4 md:hidden">
             <div
-              className="self-end text-2xl cursor-pointer mb-8"
+              className="self-end text-3xl cursor-pointer mt-5"
               onClick={() => setIsOpen(false)}
             >
               <IoClose />

@@ -6,7 +6,7 @@
 
 3.implemented drop down list & Button to view Products.
 
-4.Used SVG icons React Icons.
+4.Used SVG icons & React Icons.
 
 Live & hosted link:-
 https://multicode-genius-task-vijay-jain.vercel.app/
